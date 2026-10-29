@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Bar from "@/views/page2/bar";
-import '@/styles/globals.scss';
+import { type FC } from 'react';
+import styles from '@/views/page2/index.module.scss';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const Page2: FC = () => {
 
-root.render(
-  <React.StrictMode>
-    <Bar />
-  </React.StrictMode>
-);
+  return (
+    <main className={styles.App}>
+        this is page2
+    </main>
+  );
+};
+
+export default Page2;
